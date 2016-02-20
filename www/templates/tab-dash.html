@@ -1,0 +1,18 @@
+<ion-view view-title="Clima de {{elTiempo.name}}">
+  <ion-content class="padding">
+    <h2>El Tiempo de {{elTiempo.name}}</h2>
+    <div class="list card">
+      <div class="item item-icon-left assertive">
+        <img ng-src="http://openweathermap.org/img/w/{{elTiempo.weather[0].icon}}.png" alt="{{elTiempo.weather[0].main}}">
+        
+        <p>
+          El Cielo esta: {{elTiempo.weather[0].main}}
+        </p>
+        <p>
+          La temperatura es: {{elTiempo.main.temp}} C°
+        </p>
+
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
